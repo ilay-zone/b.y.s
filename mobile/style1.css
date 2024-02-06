@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #c2c2c2; /* Define a variable named --main-color */
+    --primary-color-dark: #c6c6c6; /* Define a variable named --main-color */
+    --primary-color-light: #ececec; /* Define a variable named --main-color */
+    --secondary-color: #000000; /* Define a variable named --main-color */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-dark));
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.fixed {
+    position: fixed;
+    display: inline;
+}
+
+.absolute {
+    position: absolute;
+}
+
+#button {
+    background-color: #3498db; /* Base color */
+    border: none;
+    padding: 10px 20px; /* Adjusted padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0; /* Adjusted margin */
+    cursor: pointer;
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shading effect */
+    height: auto; /* Adjusted height for responsiveness */
+    width: auto; /* Adjusted width for responsiveness */
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-dark));
+    text-align: center;
+    outline: none;
+    color: var(--secondary-color);
+}
+
+#button:hover {
+    background: linear-gradient(to bottom, var(--primary-color-light), var(--primary-color));
+    color: #f20eae;
+}
+
+#button:active {
+    background-color: #e012a2;
+    color: var(--primary-color);
+}
+
+body, div, p {
+    display: inline;
+}
+
+br {
+    display: none;
+}
+
+.inline {
+    display: inline;
+}

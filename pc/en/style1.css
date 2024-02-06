@@ -1,0 +1,87 @@
+
+:root {
+    --primary-color: #7BC4A3; /* Define a variable named --main-color */
+    --primary-color-dark: #6bad90; /* Define a variable named --main-color */
+    --primary-color-light: #8fd4b5; /* Define a variable named --main-color */
+    --secondary-color: #ffffff; /* Define a variable named --main-color */
+}
+  
+@font-face {
+    font-family: 'quicksand-Regular';
+    src: url('font/Quicksand-Regular.ttf') format('truetype');
+    /* Add more font formats (woff, woff2, etc.) for better compatibility */
+    /* src: url('fonts/Alef-Regular.woff') format('woff'),
+            url('fonts/Alef-Regular.woff2') format('woff2'),
+            url('fonts/Alef-Regular.ttf') format('truetype'); */
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    font-family: 'quicksand-Regular', sans-serif;
+    height: 10%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-dark));
+    color: var(--secondary-color);
+    /*padding: 5px;
+    outline: none;
+    text-align: center;*/
+}
+.center {
+    text-align: center;
+    left:50%;
+}
+.left {
+    text-align: left;
+    left:0%
+}
+.right {
+    text-align: right;
+    left:100%;
+}
+.fixed {
+    position: fixed;
+    display: inline;
+}
+.absolute {
+    position: absolute;
+}
+#button {
+    background-color: #3498db; /* Base color */
+    border: none;
+    padding: none; /*10px 20px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-size: 16px;
+    margin: none;
+    cursor: pointer;
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: none; /*0 4px 8px rgba(0, 0, 0, 0.2); /* Shading effect */
+    height: 10%;
+    width: 15%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-dark));
+    text-align:center;
+    outline:none;
+    color: var(--secondary-color);
+}
+#button:hover {
+    background: linear-gradient(to bottom, var(--primary-color-light), var(--primary-color));
+    color: #f20eae;
+}
+#button:active {
+    background-color: #e012a2;
+    color: var(--primary-color);
+}
+body, div, p {
+    display: inline;
+}
+
+br {
+    display: none;
+}
+.inline {
+    display: inline;
+}
