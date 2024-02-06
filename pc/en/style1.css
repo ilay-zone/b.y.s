@@ -4,6 +4,8 @@
     --primary-color-dark: #6bad90; /* Define a variable named --main-color */
     --primary-color-light: #8fd4b5; /* Define a variable named --main-color */
     --secondary-color: #ffffff; /* Define a variable named --main-color */
+    --background-color1: #f432fb;
+    --background-color2: #1298db;
 }
   
 @font-face {
@@ -14,7 +16,9 @@
             url('fonts/Alef-Regular.woff2') format('woff2'),
             url('fonts/Alef-Regular.ttf') format('truetype'); */
 }
-
+body {
+    background: linear-gradient(45deg, var(--background-color1), var(--background-color2));
+}
 header {
     position: fixed;
     top: 0%;
