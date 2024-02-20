@@ -1,12 +1,12 @@
 
 :root {
-    --primary-color: #b2b2b3; /* Define a variable named --main-color */
-    --primary-color-dark: #b2b2b3; /* Define a variable named --main-color */
-    --primary-color-light: #b2b2b3; /* Define a variable named --main-color */
+    --primary-color: #8863ec; /* Define a variable named --main-color */
+    --primary-color-dark: #7a57dc; /* Define a variable named --main-color */
+    --primary-color-light: #9774f9; /* Define a variable named --main-color */
     --secondary-color: #ffffff; /* Define a variable named --main-color */
-    --secondary-color-dark: #ffffff; /* Define a variable named --main-color */
-    --background-color1: #cbcbcb;
-    --background-color2: #b2b2b3;
+    --secondary-color-dark: #464646; /* Define a variable named --main-color */
+    --background-color1: #f432fb;
+    --background-color2: #1298db;
 }
   
 @font-face {
@@ -19,40 +19,9 @@
 }
 body {
     background: linear-gradient(45deg, var(--background-color1), var(--background-color2));
-}
-header {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width:100%;
-    font-family: 'quicksand-Regular', sans-serif;
-    height: 10%;
-    /*background: linear-gradient(to right, var(--primary-color), var(--primary-color-dark));*/
-    background: linear-gradient(to bottom, var(--background-color1), var(--background-color2));
-    color: var(--secondary-color);
-    /*padding: 5px;
-    outline: none;
-    text-align: center;*/
-}
-.center {
     text-align: center;
-    left:50%;
 }
-.left {
-    text-align: left;
-    left:0%
-}
-.right {
-    text-align: right;
-    left:100%;
-}
-.fixed {
-    position: fixed;
-    display: inline;
-}
-.absolute {
-    position: absolute;
-}
+
 #button {
     /*background-color: #3498db; /* Base color */
     border: none;
@@ -81,9 +50,6 @@ header {
     background: linear-gradient(-52deg, var(--background-color1), var(--background-color2));
     color: var(--secondary-color-dark);
 }
-body, div, p, a {
-    display: inline;
-}
 a {
     color: var(--secondary-color);
 }
@@ -93,10 +59,23 @@ a:hover {
 a:active {
     color: var(--secondary-color-dark);
 }
-
-br {
-    display: none;
-}
 .inline {
     display: inline;
+}
+h1 {
+    font-size: 300%;
+}
+.input {
+    position: fixed;
+    left: 40%;
+    width: 10%;
+    height: 3%;
+}
+form { 
+    display: block;
+    width: 20%;
+    height: 25%;
+    text-align: center;
+    background-color: #b2b2b3;
+    margin-top: 0em;
 }
